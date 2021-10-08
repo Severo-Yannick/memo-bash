@@ -24,3 +24,9 @@ Exemples :<br>
 
 ```rmdir <rep1> <rep2>: ```(Remove Directory) supprime les répertoires indiqués (au moins un). Les
 répertoires doivent être vides.
+
+```rm <fich1> <fich2>``` (Remove) supprime les fichiers passés en paramètres. ATTENTION : aucun moyen de les récupérer par la suite.<br>
+Options :<br>
+```-i``` : demande confirmation avant chaque effacement.<br>
+```-f``` : ne demande jamais de confirmation<br>
+```-r``` : effacement récursif. Exemple : ```rm -r <rep1> <rep2>``` permet d’effacer les répertoires indiqués ainsi que tout ce qu’ils contiennent définitivement.
