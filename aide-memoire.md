@@ -21,3 +21,6 @@ Exemples :<br>
 ```mkdir <rep1> <rep2>```: (Make Directory) créer les répertoires indiqués en parmètre (au moins un)  Les répertoires pères de ```<rep1> <rep2>``` doivent déjà exister.
 ```Options``` :<br>
 ```-p``` : si les répertoires pères n’existent pas, ils sont également créés.
+
+```rmdir <rep1> <rep2>: ```(Remove Directory) supprime les répertoires indiqués (au moins un). Les
+répertoires doivent être vides.
