@@ -10,3 +10,10 @@ Dans la suite, ```<fich>``` est le chemin (absolu ou relatif) d’un fichier, ``
 ```-a``` : liste également les fichiers et répertoires cachés (dont le nom commence par un point ```.```).<br>
 ```-l``` : liste en plus les attibuts des fichiers.<br>
 ```-h``` : avec ```-l``` donne les tailles des fichiers sous une forme plus lisible.
+
+```cd (Change Directory)``` : Change le dossier/répertoire courant. Commande interne.<br>
+Exemples :<br>
+```cd <rep>``` : se déplace dans le répertoire indiqué en paramètre.<br>
+```cd``` : se déplace dans le répertoire personnel (/)<br>
+```cd ..``` : remonte dans le répertoire supérieur/parent.<br>
+```cd -``` : se déplace dans le dernier répertoire visité.
