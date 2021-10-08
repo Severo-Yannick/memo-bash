@@ -17,3 +17,7 @@ Exemples :<br>
 ```cd``` : se déplace dans le répertoire personnel (/)<br>
 ```cd ..``` : remonte dans le répertoire supérieur/parent.<br>
 ```cd -``` : se déplace dans le dernier répertoire visité.
+
+```mkdir <rep1> <rep2>```: (Make Directory) créer les répertoires indiqués en parmètre (au moins un)  Les répertoires pères de ```<rep1> <rep2>``` doivent déjà exister.
+```Options``` :<br>
+```-p``` : si les répertoires pères n’existent pas, ils sont également créés.
