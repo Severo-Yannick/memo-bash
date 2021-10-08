@@ -30,3 +30,9 @@ Options :<br>
 ```-i``` : demande confirmation avant chaque effacement.<br>
 ```-f``` : ne demande jamais de confirmation<br>
 ```-r``` : effacement récursif. Exemple : ```rm -r <rep1> <rep2>``` permet d’effacer les répertoires indiqués ainsi que tout ce qu’ils contiennent définitivement.
+
+```cp``` (Copy) copie de fichiers et de répertoires.<br>
+Utilisation :<br>
+```cp <fich1> <fich2>```: crée un nouveau fichier de chemin ```<fich2>``` et copie dedans le contenu de ```<fich1>```dans  ``` <fich2>```. Si ```<fich2>``` existait déjà, il est écrasé.<br>
+```cp <fich1> <fich2>``` ...```<rep>``` : copie dans le répertoire ```<rep>``` les fichiers indiqués en paramètres. ```<rep>``` doit déjà exister.<br>
+```cp -r <rep1> <rep2>``` : si ```<rep2>``` existe, alors copie récursivement dedans le répertoire ```<rep1>``` et tout son contenu. Sinon, il crée le répertoire ```<rep2>``` et copie dedans tout le contenu de ```<rep1>```.
