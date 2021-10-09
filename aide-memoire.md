@@ -36,3 +36,10 @@ Utilisation :<br>
 ```cp <fich1> <fich2>```: crée un nouveau fichier de chemin ```<fich2>``` et copie dedans le contenu de ```<fich1>```dans  ``` <fich2>```. Si ```<fich2>``` existait déjà, il est écrasé.<br>
 ```cp <fich1> <fich2>``` ...```<rep>``` : copie dans le répertoire ```<rep>``` les fichiers indiqués en paramètres. ```<rep>``` doit déjà exister.<br>
 ```cp -r <rep1> <rep2>``` : si ```<rep2>``` existe, alors copie récursivement dedans le répertoire ```<rep1>``` et tout son contenu. Sinon, il crée le répertoire ```<rep2>``` et copie dedans tout le contenu de ```<rep1>```.
+
+```mv``` (Move) déplace/renomme des fichiers et des répertoires.<br>
+Utilisation :<br>
+```mv <fich1> <fich2>``` : déplace le fichier ```<fich1>``` pour que son chemin devienne ```<fich2>```.<br>
+```mv <fich1 ou rep1> <fich2 ou rep2>``` ...```<rep>``` : déplace, dans le répertoire ```<rep>```, les fichiers ou répertoires indiqués en paramètre. ```<rep>``` doit exister.<br>
+```mv <rep1> <rep2>``` : si le répertoire ```<rep2>``` existe, alors il déplace ```<rep1>``` dedans. Sinon, il déplace le
+répertoire <rep1> pour que son chemin devienne <rep2>.
