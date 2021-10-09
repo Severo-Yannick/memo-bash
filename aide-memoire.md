@@ -49,3 +49,5 @@ Option :
 ```-s``` : crée un lien symbolique au lieu d’un lien physique.
 
 ```touch <fich1> <fich2>``` crée des fichiers vides. Si les fichiers existent déjà, alors leur date de dernière modification est mise à la date courante.
+
+```tar, zip, unzip``` : Créer une archive ou extraire des fichiers d’une archive (voir les pages du man).
