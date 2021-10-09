@@ -43,3 +43,7 @@ Utilisation :<br>
 ```mv <fich1 ou rep1> <fich2 ou rep2>``` ...```<rep>``` : déplace, dans le répertoire ```<rep>```, les fichiers ou répertoires indiqués en paramètre. ```<rep>``` doit exister.<br>
 ```mv <rep1> <rep2>``` : si le répertoire ```<rep2>``` existe, alors il déplace ```<rep1>``` dedans. Sinon, il déplace le
 répertoire <rep1> pour que son chemin devienne <rep2>.
+
+```ln <fich1> <fich2>``` (Link) crée un lien physique du fichier <fich1> vers <fich2>.<br>
+Option :
+```-s``` : crée un lien symbolique au lieu d’un lien physique.
