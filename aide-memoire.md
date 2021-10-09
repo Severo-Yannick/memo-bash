@@ -47,3 +47,5 @@ répertoire <rep1> pour que son chemin devienne <rep2>.
 ```ln <fich1> <fich2>``` (Link) crée un lien physique du fichier <fich1> vers <fich2>.<br>
 Option :
 ```-s``` : crée un lien symbolique au lieu d’un lien physique.
+
+```touch <fich1> <fich2>``` crée des fichiers vides. Si les fichiers existent déjà, alors leur date de dernière modification est mise à la date courante.
