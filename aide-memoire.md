@@ -53,3 +53,5 @@ Option :
 ```tar, zip, unzip``` créer une archive ou extraire des fichiers d’une archive (voir les pages du man).
 
 ```gzip <fich>, gunzip <fich>``` compresser ou décompresser un fichier.
+
+```diff <fich1> <fich2>``` affiche les différences de lignes entre les arguments. Fonctionne également pour les répertoires.
