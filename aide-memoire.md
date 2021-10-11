@@ -70,3 +70,5 @@ Options :<br>
 ```-l``` (Line) : le nombre de lignes.<br>
 ```-c```(Character) : le nombre de caract`eres.<br>
 ```-w``` (Word) : le nombre de mots.<br>
+
+```head -n <nb> <fich>``` : Extraire les ```<nb>``` premières lignes.
