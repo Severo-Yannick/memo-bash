@@ -71,4 +71,6 @@ Options :<br>
 ```-c```(Character) : le nombre de caract`eres.<br>
 ```-w``` (Word) : le nombre de mots.<br>
 
-```head -n <nb> <fich>``` : Extraire les ```<nb>``` premières lignes.
+```head -n <nb> <fich>``` extraire les ```<nb>``` premières lignes.
+
+```tail -n <nb> <fich>``` extraire les ```<nb>``` dernières lignes. Si ```<nb>```est de la forme +n, alors extraire à partir de la n-ième ligne.
