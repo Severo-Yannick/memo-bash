@@ -64,3 +64,9 @@ Pour toutes les commandes suivantes :<br>
 􏰀→ le résultat de la commande est afficher sur sa sortie standard ```(stdout)```.
 
 ```cat <fich1> <fich2>``` (Catenate) : Affiche le contenu du (ou des) fichiers les uns à la suite des autres.
+
+```wc <fich>``` (Word Count) compte le nombre de lignes, mots et caractères d’un texte.<br>
+Options :<br>
+```-l``` (Line) : le nombre de lignes.<br>
+```-c```(Character) : le nombre de caract`eres.<br>
+```-w``` (Word) : le nombre de mots.<br>
