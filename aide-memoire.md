@@ -55,3 +55,12 @@ Option :
 ```gzip <fich>, gunzip <fich>``` compresser ou décompresser un fichier.
 
 ```diff <fich1> <fich2>``` affiche les différences de lignes entre les arguments. Fonctionne également pour les répertoires.
+
+## 2 - Commandes de gestion des fichiers et répertoires
+
+Pour toutes les commandes suivantes :<br>
+􏰀→ si aucun chemin de fichier n’est donné en paramètre, la commande lit son entrée standard
+```(stdin)``` ;<br>
+􏰀→ le résultat de la commande est afficher sur sa sortie standard ```(stdout)```.
+
+```cat <fich1> <fich2>``` (Catenate) : Affiche le contenu du (ou des) fichiers les uns à la suite des autres.
