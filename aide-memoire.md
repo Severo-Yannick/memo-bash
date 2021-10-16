@@ -83,5 +83,8 @@ Options :<br>
 ```cut <colonnes> <fich>``` extrait certaines parties dans chaque ligne.<br>
 Options : <br>
 ```-c``` : indique la ou les positions des parties à extraire.<br>
-```-f``` : indique un num ́ero de champ.<br>
-```-d``` : indique un caract`ere d ́elimiteur de champ.<br>
+```-f``` : indique un numéro de champ.<br>
+```-d``` : indique un caractère d ́elimiteur de champ.<br>
+Exemples :<br>
+```cut -c5-15,33-37-``` : extraire dans chaque ligne les caractères 5 à 15, le caractères 33 et les caractères de 37 jusqu'a la fin de la ligne.<br>
+```cut -d’’,’’ -f3-5``` : extraire les champs 3 à 5 de chaque ligne en utilisant le caractère “,” comme délimiteur de champ.
