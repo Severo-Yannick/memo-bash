@@ -74,3 +74,8 @@ Options :<br>
 ```head -n <nb> <fich>``` extraire les ```<nb>``` premières lignes.
 
 ```tail -n <nb> <fich>``` extraire les ```<nb>``` dernières lignes. Si ```<nb>```est de la forme +n, alors extraire à partir de la n-ième ligne.
+
+```grep <motif> <fich>``` (Global Regular Expression Print) afficher les lignes contenant le <motif>. Options : <br>
+```-c``` : afficher le nombre de lignes contenant le ```<motif>```.<br>
+```-n``` : afficher en plus le num ́ero de la ligne.<br>
+```-v``` : afficher les lignes qui ne contiennent pas le ```<motif>```.<br>
