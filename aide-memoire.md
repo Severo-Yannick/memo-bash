@@ -88,3 +88,9 @@ Options : <br>
 Exemples :<br>
 ```cut -c5-15,33-37-``` : extraire dans chaque ligne les caractères 5 à 15, le caractères 33 et les caractères de 37 jusqu'a la fin de la ligne.<br>
 ```cut -d’’,’’ -f3-5``` : extraire les champs 3 à 5 de chaque ligne en utilisant le caractère “,” comme délimiteur de champ.
+
+```tr <liste1> <liste2>``` (Transform), ou` ```<liste1>``` et ```<liste2>``` sont des listes de caractères : Remplace les caractères de ```<liste1>``` par le caractère à la même position dans ```<liste2>```. Cette commande lit sur l’entrée standard ```stdin``` et envoie le résultat sur la sortie standard ```stdout```.<br>
+Options :<br>
+```tr -d <liste>``` : supprime de ```stdin``` tous les caractères de ```<liste>```.<br>
+```tr -s <liste>``` : supprime de ```stdout``` toutes les répétitions des caractères de ```<liste>```.<br>
+N.B. : Les listes de caractères peuvent se définir en les écrivant entre guillemets ou en utilisant des listes préd ́efinies (voir la page de man).
