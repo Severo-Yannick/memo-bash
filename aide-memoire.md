@@ -94,3 +94,8 @@ Options :<br>
 ```tr -d <liste>``` : supprime de ```stdin``` tous les caractères de ```<liste>```.<br>
 ```tr -s <liste>``` : supprime de ```stdout``` toutes les répétitions des caractères de ```<liste>```.<br>
 N.B. : Les listes de caractères peuvent se définir en les écrivant entre guillemets ou en utilisant des listes préd ́efinies (voir la page de man).
+
+```sort <fich>``` : trie les lignes par ordre alphabétique croissant.<br> 
+Options :<br>
+```-r``` : tri décroissant.<br>
+```-n``` : suppose que les lignes commencent par un nombre, trie en utilisant la valeur de ce nombre.
