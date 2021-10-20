@@ -99,3 +99,6 @@ N.B. : Les listes de caractères peuvent se définir en les écrivant entre guil
 Options :<br>
 ```-r``` : tri décroissant.<br>
 ```-n``` : suppose que les lignes commencent par un nombre, trie en utilisant la valeur de ce nombre.
+
+```more``` : affiche le contenu d’un fichier page par page. La touche ```espace``` permet de passer à la page suivante.<br>
+La touche ```q``` permet de quitter.
