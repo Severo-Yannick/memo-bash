@@ -102,3 +102,8 @@ Options :<br>
 
 ```more``` : affiche le contenu d’un fichier page par page. La touche ```espace``` permet de passer à la page suivante.<br>
 La touche ```q``` permet de quitter.
+
+```less``` : affiche le contenu d’un fichier page par page. Les touches ```↑``` et ```↓```
+dans le texte .<br>
+La touche ```/``` permet de rentrer au clavier une chaîne à rechercher dans le texte et les touches ```n``` et ```N``` permettent de se déplacer sur les diff ́erentes occurences de la chaîne.<br>
+La touche ```q``` permet de quitter.
