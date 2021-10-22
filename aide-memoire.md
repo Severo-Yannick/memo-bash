@@ -109,3 +109,5 @@ La touche ```/``` permet de rentrer au clavier une chaîne à rechercher dans le
 La touche ```q``` permet de quitter.
 
 ```which <fich>``` : Localise la commande ```fich```.
+
+```file <fich>``` : Donne le type de ```fichier```.
