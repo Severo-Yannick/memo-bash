@@ -107,3 +107,5 @@ La touche ```q``` permet de quitter.
 dans le texte .<br>
 La touche ```/``` permet de rentrer au clavier une chaîne à rechercher dans le texte et les touches ```n``` et ```N``` permettent de se déplacer sur les diff ́erentes occurences de la chaîne.<br>
 La touche ```q``` permet de quitter.
+
+```which <fich>``` : Localise la commande ```fich```.
