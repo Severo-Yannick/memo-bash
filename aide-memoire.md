@@ -108,6 +108,8 @@ dans le texte .<br>
 La touche ```/``` permet de rentrer au clavier une chaîne à rechercher dans le texte et les touches ```n``` et ```N``` permettent de se déplacer sur les diff ́erentes occurences de la chaîne.<br>
 La touche ```q``` permet de quitter.
 
-```which <fich>``` : Localise la commande ```fich```.
+```which <fich>``` : localise la commande ```fich```.
 
-```file <fich>``` : Donne le type de ```fichier```.
+```file <fich>``` : donne le type de ```fichier```.
+
+```strings <fich>``` : affiche les chaînes de caractères affichables contenues dans ```<fich>``` <br>(principalement utilisé pour récupèrer les chaînes contenues dans les fichiers non-ASCII).
