@@ -115,3 +115,6 @@ La touche ```q``` permet de quitter.
 ```strings <fich>``` : affiche les chaînes de caractères affichables contenues dans ```<fich>``` <br>(principalement utilisé pour récupèrer les chaînes contenues dans les fichiers non-ASCII).
 
 ```nm <fich> (Names)``` : affiche la table des symboles de ```<fich>``` <br>(si c’est un fichier objet ou exécutable).
+
+```od <fich> (Octal Dump)``` : affiche le contenu du fichier en octal (par défaut) ou avec d’autres codages
+(hexadécimal, ASCII,. . .). Utile pour visualiser des fichiers binaires.
