@@ -113,3 +113,5 @@ La touche ```q``` permet de quitter.
 ```file <fich>``` : donne le type de ```fichier```.
 
 ```strings <fich>``` : affiche les chaînes de caractères affichables contenues dans ```<fich>``` <br>(principalement utilisé pour récupèrer les chaînes contenues dans les fichiers non-ASCII).
+
+```nm <fich> (Names)``` : affiche la table des symboles de ```<fich>``` <br>(si c’est un fichier objet ou exécutable).
