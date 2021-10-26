@@ -118,3 +118,7 @@ La touche ```q``` permet de quitter.
 
 ```od <fich> (Octal Dump)``` : affiche le contenu du fichier en octal (par défaut) ou avec d’autres codages
 (hexadécimal, ASCII,. . .). Utile pour visualiser des fichiers binaires.
+
+## 3 - Aides
+
+```man <section> <commande>``` : affiche la page du manuel de la commande ```<commande>```. <br> Le paramètre ```<section>``` est facultatif il permet de spécifier la section du manuel ou de rechercher la commande.
