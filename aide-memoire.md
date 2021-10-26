@@ -122,3 +122,5 @@ La touche ```q``` permet de quitter.
 ## 3 - Aides
 
 ```man <section> <commande>``` : affiche la page du manuel de la commande ```<commande>```. <br> Le paramètre ```<section>``` est facultatif il permet de spécifier la section du manuel ou de rechercher la commande.
+
+```apropos <mot>``` : recherche une page de manuel contenant le mot dans sa description résumée.
