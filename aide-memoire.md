@@ -124,3 +124,5 @@ La touche ```q``` permet de quitter.
 ```man <section> <commande>``` : affiche la page du manuel de la commande ```<commande>```. <br> Le paramètre ```<section>``` est facultatif il permet de spécifier la section du manuel ou de rechercher la commande.
 
 ```apropos <mot>``` : recherche une page de manuel contenant le mot dans sa description résumée.
+
+```info``` : présente les pages d’infos qui sont en général plus détaillées et plus lisibles que les pages du manuel. Ces pages sont structurées en arbre. <br>Le plus simple est de les visualiser dans ```emacs``` : dans ```emacs``` taper Ctrl - h i . La plupart des commande présentées dans ce document sont accessible dans la section ```CoreUtils```.
