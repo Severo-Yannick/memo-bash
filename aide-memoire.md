@@ -178,3 +178,12 @@ Exemple : dirname /app/src/component.js affiche /app/src<br>
 Exemples :<br>
 · ```ps x``` : tous les processus de l’utilisateur.<br>
 · ```ps ax``` : tous les processus de tous les utilisateur.
+
+```pstree``` : affiche l’arbre des processus.<br>
+
+```top``` : affiche en vue temps réel, les processus actuellement dans le système, avec des informations sur l’utilisateur de la mémoire, du processeur, etc. La vue est actualisée périodiquement.<br>
+```h``` : affiche l’aide de top.<br>
+```s``` : modifie la p ́eriode de rafraichissment (par d ́efaut : 3 s).<br>
+```u``` : affiche seulement les processus d’un utilisateur particulier.<br>
+```k``` : envoie un signal à un processus (comme la commande kill).<br>
+```r``` : change le nice d’un processus.<br>
