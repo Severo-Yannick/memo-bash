@@ -187,3 +187,8 @@ Exemples :<br>
 ```u``` : affiche seulement les processus d’un utilisateur particulier.<br>
 ```k``` : envoie un signal à un processus (comme la commande kill).<br>
 ```r``` : change le nice d’un processus.<br>
+
+```kill <PID>``` : tue le processus de ```PID``` indiqué (pour utiliser le PID d’un processus, utiliser ```top``` ou ```ps```).<br> 
+Options :<br>
+```-s``` <signal> : envoie le signal <signal> au processus au lieu de le tuer.<br>
+```-l``` : affiche la liste des signaux disponibles.
