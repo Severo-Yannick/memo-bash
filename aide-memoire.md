@@ -196,3 +196,6 @@ Options :<br>
 ```killall <prog>``` : tue tous les processus de nom ```<prog>```.<br>
 Option :<br>
 ```-s <signal>``` : envoie le signal ```<signal>``` aux processus au lieu de les tuer.
+
+```nice +<valeur> <commande>``` : lance la commande ```<commande>``` avec un niveau de nice égal à ```<valeur>```.<br>
+Exemple : nice +15 emacs
