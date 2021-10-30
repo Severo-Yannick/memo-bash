@@ -126,3 +126,39 @@ La touche ```q``` permet de quitter.
 ```apropos <mot>``` : recherche une page de manuel contenant le mot dans sa description résumée.
 
 ```info``` : présente les pages d’infos qui sont en général plus détaillées et plus lisibles que les pages du manuel. Ces pages sont structurées en arbre. <br>Le plus simple est de les visualiser dans ```emacs``` : dans ```emacs``` taper Ctrl - h i . La plupart des commande présentées dans ce document sont accessible dans la section ```CoreUtils```.
+
+## 4 - Gestion des permissions
+
+```chmod <mode> <fich1 ou rep1> <fich2 ou rep2>``` (```Ch```ange ```m```ode) : Modifie les permissions d’accés de chacun des fichiers et répertoires indiqués, en suivant l’indication donne par ```<mode>```. Ce ```<mode>``` est :<br>
+· soit un nombre octal de 3 chiffres représentant les nouvelles permissions. <br>Le tableau ci-dessous indique la correspondance des chiffres avec les droits.
+
+### Table 1 – Correspondances de représentation des droits
+
+| Droit | Valeur alphanumérique | Valeur octale |
+|---|---|---|
+| aucun droit | —— | 0 |
+| écution seulement | -x  | 1 |
+| écriture seulement | -w- | 2 |
+| écriture et exécution | -wx- | 3 |
+| lecture seulement | r- | 4 |
+| lecture et exécution | r-x | 5 |
+| lecture et écriture | r-w | 6 |
+| tous les droits (lecture,  écriture et exécution) | rwx | 7 |
+
+. soit une représentation symbolique du changement à effectuer, de la forme ```CSP``` où :<br>
+- ```C``` est une suite de lettres indiquant à quelle(s) catégorie(s) d’utilisateurs s’applique les modifications de droits. Les choix possibles sont :<br>
+```’u’ (user)``` pour le propriétaire ;<br>
+```’g’ (group)``` pour le groupe d’utilisateurs ;<br>
+```’o’ (other)``` pour les autres utilisateurs ;<br>
+```’a’ (all)``` pour tous les utilisateurs.<br>
+- ```S``` peut prendre comme valeur :<br>
+```’+’``` pour ajouter des droits ;<br>
+```’-’``` pour enlever des droits.<br>
+- ```P``` est une suite de lettres indiquant quels sont les droits modifiés :<br>
+```’r’ (read)``` pour la lecture ;<br>
+```’w’ (write)``` pour l’ ́ecriture ;<br>
+```’x’ (execute)``` pour l’execution.<br>
+Exemples :<br>
+· chmod 744 toto (mode numérique)<br>
+· chmod ug+rw titi (mode symbolique) : il faut rajouter des droits (+) en lecture et  écriture (rw) au
+propriétaire et au groupe (ug).
