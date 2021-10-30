@@ -199,3 +199,7 @@ Option :<br>
 
 ```nice +<valeur> <commande>``` : lance la commande ```<commande>``` avec un niveau de nice égal à ```<valeur>```.<br>
 Exemple : nice +15 emacs
+
+## 7 - Autres commandes
+
+```time <commande>``` : exécute la ```<commande>``` et affiche le temps utilisée par celle-ci.
