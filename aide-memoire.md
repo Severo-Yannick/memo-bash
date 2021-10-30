@@ -205,3 +205,16 @@ Exemple : nice +15 emacs
 ```time <commande>``` : exécute la ```<commande>``` et affiche le temps utilisée par celle-ci.<br>
 ```date``` : affiche la date et l’heure.<br>
 ```bc (Basic Calculator)``` : calculatrice.
+
+```find <rep> <expression>``` : recherche les fichiers ou les repertoires satisfaisant ```<expression>``` dans l’arborescence de racine ```<rep>```.<br>
+Options (voir la page de manuel pour d’autres options) :<br>
+```-name``` : recherche par nom de fichier.<br>
+```-type``` : recherche par type de fichier.<br>
+```-size``` : recherche par taille de fichier.<br>
+Exemples :<br>
+```find toto -name "hop"``` : recherche les fichiers ou répertoires de nom ```hop``` dans l’arborescence de
+racine ```toto```.<br>
+```find 􏰀 -name "*.txt"``` : recherche les fichiers ou répertoires dont le nom se fini par ```.txt``` dans
+l’arborescence du répertoire courant.<br>
+```find 􏰀 -type f``` : recherche les fichiers dans l'arborescence de racine le répertoire courant.
+On peut évidemment combiner les critères.
