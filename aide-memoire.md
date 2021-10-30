@@ -218,3 +218,6 @@ racine ```toto```.<br>
 l’arborescence du répertoire courant.<br>
 ```find 􏰀 -type f``` : recherche les fichiers dans l'arborescence de racine le répertoire courant.
 On peut évidemment combiner les critères.
+
+```du (Disk Usage)``` : affiche la taille (en ko) de tous les répertoires et sous-répertoires du répertoire courant.<br>
+On peut l’utiliser dans un tube avec sort pour trier les résultats : ```du | sort -n```.
