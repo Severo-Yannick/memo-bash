@@ -162,3 +162,12 @@ Exemples :<br>
 · chmod 744 toto (mode numérique)<br>
 · chmod ug+rw titi (mode symbolique) : il faut rajouter des droits (+) en lecture et  écriture (rw) au
 propriétaire et au groupe (ug).
+
+## 5 - Opérations sur les chemins
+
+Les opérations suivantes sont principalement utiles dans les scripts.<br>
+```basename <chemin>``` : affiche le nom seul du fichier indiqué par ```<chemin>```.<br>
+Exemple : basename /app/src/component.js affiche component.js<br>
+```dirname <chemin>``` : affiche le nom des répertoires.<br>
+Exemple : dirname /app/src/component.js affiche /app/src<br>
+```realink -f <chemin>``` : affiche le chemin absolu correspondant au chemin ```<chemin>```.
