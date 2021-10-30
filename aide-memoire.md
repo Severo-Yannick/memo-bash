@@ -171,3 +171,10 @@ Exemple : basename /app/src/component.js affiche component.js<br>
 ```dirname <chemin>``` : affiche le nom des répertoires.<br>
 Exemple : dirname /app/src/component.js affiche /app/src<br>
 ```realink -f <chemin>``` : affiche le chemin absolu correspondant au chemin ```<chemin>```.
+
+## 6 - Commandes sur les processus
+
+```ps (Processus Status)``` : affiche des informations sur les processus en cours d’exécution.<br>
+Exemples :<br>
+· ```ps x``` : tous les processus de l’utilisateur.<br>
+· ```ps ax``` : tous les processus de tous les utilisateur.
