@@ -203,4 +203,5 @@ Exemple : nice +15 emacs
 ## 7 - Autres commandes
 
 ```time <commande>``` : exécute la ```<commande>``` et affiche le temps utilisée par celle-ci.<br>
-```date``` : affiche la date et l’heure.
+```date``` : affiche la date et l’heure.<br>
+```bc (Basic Calculator)``` : calculatrice.
