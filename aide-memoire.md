@@ -221,3 +221,7 @@ On peut évidemment combiner les critères.
 
 ```du (Disk Usage)``` : affiche la taille (en ko) de tous les répertoires et sous-répertoires du répertoire courant.<br>
 On peut l’utiliser dans un tube avec sort pour trier les résultats : ```du | sort -n```.
+
+## 8 - Commandes internes
+
+Les commandes internes sont fournies par le shell bash lui-même. Pour plus d'informations sur ces commandes, lire la page ```man``` de ```bash```. Certaines de ces commandes sont réelement utiles que dans un script.
