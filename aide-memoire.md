@@ -229,3 +229,7 @@ Les commandes internes sont fournies par le shell bash lui-même. Pour plus d'in
 ```echo <chaine>``` : affiche la ```<chaine>``` sur la sortie standart suivi d’un retour à la ligne.<br>
 Option :<br>
 ```-n``` : pas de retour à la ligne.
+
+```read <variable>``` : permet de mettre ce qui est lu sur l’entrée standard (via echo)
+dans la variable ```<variable>```.<br>
+voir section 9.1.
