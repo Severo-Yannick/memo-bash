@@ -225,3 +225,7 @@ On peut l’utiliser dans un tube avec sort pour trier les résultats : ```du | 
 ## 8 - Commandes internes
 
 Les commandes internes sont fournies par le shell bash lui-même. Pour plus d'informations sur ces commandes, lire la page ```man``` de ```bash```. Certaines de ces commandes sont réelement utiles que dans un script.
+
+```echo <chaine>``` : affiche la ```<chaine>``` sur la sortie standart suivi d’un retour à la ligne.<br>
+Option :<br>
+```-n``` : pas de retour à la ligne.
