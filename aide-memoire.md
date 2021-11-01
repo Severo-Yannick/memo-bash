@@ -238,3 +238,5 @@ voir section 9.1.
 ```<n>``` est facultatif, il vaut 1 par défaut.<br>
 <b>Exemple</b> : Soit $1="un", $2="six", $3="toto" et $4="hop". Après la commande shift, on a $1="6",
 $2="toto", $3="hop" et $4 est vide.
+
+```exit <n>``` : termine un script avec comme code de retour ```<n>```
