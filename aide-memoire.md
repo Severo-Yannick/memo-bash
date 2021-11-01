@@ -233,3 +233,8 @@ Option :<br>
 ```read <variable>``` : permet de mettre ce qui est lu sur l’entrée standard (via echo)
 dans la variable ```<variable>```.<br>
 voir section 9.1.
+
+```shift <n>``` : décale les paramètres de ```<n>``` positions vers la gauche <br>
+```<n>``` est facultatif, il vaut 1 par défaut.<br>
+<b>Exemple</b> : Soit $1="un", $2="six", $3="toto" et $4="hop". Après la commande shift, on a $1="6",
+$2="toto", $3="hop" et $4 est vide.
