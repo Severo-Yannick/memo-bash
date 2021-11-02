@@ -242,3 +242,9 @@ $2="toto", $3="hop" et $4 est vide.
 ```exit <n>``` : termine un script avec comme code de retour ```<n>```.
 
 ```time <commande>``` : exécute la ```<commande>``` et affiche le temps utilisée par celle-ci.
+
+## 9 - Script bash
+
+Un script bash commence toujours par la ligne :<br>
+#!/usr/bin/env bash <br>
+Les scripts peuvent comporter des commentaires qui sont introduits par le caratère ``#``.
