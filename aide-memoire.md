@@ -276,3 +276,9 @@ Par exemple on peut récupérer le contenu d’un fichier comme suit :<br>
 ```echo "age ?"; read n; echo "vous avez $n ans."```<br>
 (met ce qui est lu sur l’entrée standard dans la variable n)<br>
 <b>ATTENTION</b> : Ne pas mettre d’espaces avant et après le signe =.
+
+### 9.1.1 Variables spéciales (dans un script)
+• ```$0``` : nom de la commande<br>
+• ```$1, $2, $3```,. . . : paramètres<br>
+• ```"$@" ou $*``` : liste de tous les paramètres à partir de ```$1```<br>
+• ```$#``` : nombre de param`etres (sans compter ```$0```)
