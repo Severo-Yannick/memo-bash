@@ -248,3 +248,31 @@ $2="toto", $3="hop" et $4 est vide.
 Un script bash commence toujours par la ligne :<br>
 #!/usr/bin/env bash <br>
 Les scripts peuvent comporter des commentaires qui sont introduits par le caratère ``#``.
+
+### 9.1 Variables
+
+Les variables (ou les variables d’environement) du shell sont de type chaine de caractères ou entier.<br>
+On peut leur affecter :<br>
+
+• Des valeurs constantes :<br>
+```a="bonjour"```<br>
+```b=34```<br>
+
+• Le contenu d’une autre variable ou variable d’environnement : <br>
+```aa="$a $USER, ca va bien ?"```<br>
+
+• Le résultat d’un calcul avec ```$(( ))``` (attention, le shell ne gère QUE les entiers) :<br>
+```c=$((324 * 432 - $b ))```
+
+• le résultat d’une commande avec ```$( )``` :
+
+```bb=$(ls *.txt)```
+```bb=$(ls *.txt | wc -l)```
+
+Par exemple on peut récupérer le contenu d’un fichier comme suit :<br>
+```bb=$(cat nom_fichier)```
+
+• ce qui est lu sur l’entrée standard en utilisant read :<br>
+```echo "age ?"; read n; echo "vous avez $n ans."```<br>
+(met ce qui est lu sur l’entrée standard dans la variable n)<br>
+<b>ATTENTION</b> : Ne pas mettre d’espaces avant et après le signe =.
