@@ -282,3 +282,14 @@ Par exemple on peut récupérer le contenu d’un fichier comme suit :<br>
 • ```$1, $2, $3```,. . . : paramètres<br>
 • ```"$@" ou $*``` : liste de tous les paramètres à partir de ```$1```<br>
 • ```$#``` : nombre de param`etres (sans compter ```$0```)
+
+### 9.1.2 Guillemets
+• Le guillemet simple ’ dénote une chaîne dans laquelle **aucune** substitution de variables n’est faite.
+• Le guillemet double ” dénote une chaîne dans laquelle **toutes** les substitutions de variables sont faites.<br>
+Exemple :<br>
+morvant:~/Documents> ch1="Bonjour $USER"<br>
+morvant:~/Documents> ch2=’BONJOUR $USER’<br>
+morvant:~/Documents> echo $ch1<br>
+Bonjour morvant<br>
+morvant:~/Documents> echo $ch2<br>
+Bonjour $USER
