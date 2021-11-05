@@ -287,13 +287,39 @@ Par exemple on peut récupérer le contenu d’un fichier comme suit :<br>
 • Le guillemet simple ’ dénote une chaîne dans laquelle **aucune** substitution de variables n’est faite.<br>
 • Le guillemet double ” dénote une chaîne dans laquelle **toutes** les substitutions de variables sont faites.<br>
 Exemple :<br>
-morvant:~/Documents> ch1="Bonjour $USER"<br>
-morvant:~/Documents> ch2=’BONJOUR $USER’<br>
-morvant:~/Documents> echo $ch1<br>
-Bonjour morvant<br>
-morvant:~/Documents> echo $ch2<br>
+```bash
+morvant:~/Documents> ch1="Bonjour $USER"
+morvant:~/Documents> ch2=’BONJOUR $USER’
+morvant:~/Documents> echo $ch1
+Bonjour morvant
+morvant:~/Documents> echo $ch2
 Bonjour $USER
+```
 
 ### 9.1.3 Portée des variables
 Une variable est locale à son interpréteur. Pour la rendre visible aux processus fils de l’interpréteur qui l’a définie, il faut l’**exporter** comme suit.<br>
-***export ma_variable***
+```bash
+export ma_variable
+```
+
+### 9.2 Conditionnelle
+La syntaxe des conditionnelles est :<br>
+```bash
+if <commande>
+then
+    <liste de commandes1>
+else
+    <liste de commandes2>  # facultatif
+fi;
+```
+
+***ATTENTION*** : Si on met sur la même ligne les mots-clés ```if```, ```then``` et/ou ```fi``` il faut mettre un point-virgule ```;``` séparateur.<br>
+```bash
+if <commande> ; then <liste de commandes1> ;else <liste de commandes2>; fi
+
+Si <commande> renvoie un code de retour égal à 0 alors <liste de commande1> est exécutée sinon <liste de commande2> (s’il y a un else). <commande> peut être un test (c.f. section 9.5).
+```
+***Exemple*** :
+```bash
+if grep -q voiture fich; then echo "c’est vrai"; else echo "c’est faux"; fi
+```
