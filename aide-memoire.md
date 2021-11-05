@@ -284,7 +284,7 @@ Par exemple on peut récupérer le contenu d’un fichier comme suit :<br>
 • ```$#``` : nombre de param`etres (sans compter ```$0```)
 
 ### 9.1.2 Guillemets
-• Le guillemet simple ’ dénote une chaîne dans laquelle **aucune** substitution de variables n’est faite.
+• Le guillemet simple ’ dénote une chaîne dans laquelle **aucune** substitution de variables n’est faite.<br>
 • Le guillemet double ” dénote une chaîne dans laquelle **toutes** les substitutions de variables sont faites.<br>
 Exemple :<br>
 morvant:~/Documents> ch1="Bonjour $USER"<br>
@@ -293,3 +293,7 @@ morvant:~/Documents> echo $ch1<br>
 Bonjour morvant<br>
 morvant:~/Documents> echo $ch2<br>
 Bonjour $USER
+
+### 9.1.3 Portée des variables
+Une variable est locale à son interpréteur. Pour la rendre visible aux processus fils de l’interpréteur qui l’a définie, il faut l’**exporter** comme suit.<br>
+***export ma_variable***
