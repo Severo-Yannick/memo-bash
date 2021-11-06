@@ -344,3 +344,28 @@ Exemple :
 a=0;
 while (( a < 10 )); do a=$(( a + 1 )); echo $a; done;
 ```
+
+### 9.4 Boucle for
+
+La syntaxe des boucles pour est :
+
+```bash
+for <nom> in <liste>
+do
+  <liste de commandes>
+done
+```
+
+***ATTENTION*** : Si on met sur la même ligne les mots-clés ```for```, ```do``` et/ou ```done``` il faut mettre un point-virgule ```;``` séparateur.
+
+```bash
+for <nom> in <liste>; do <liste de commandes> ; done
+
+    <nom> est un nom de variable et <liste> est une liste de mots. La <liste de commandes> est ex ́ecut ́ee
+une fois pour chaque mot de la <liste> en affectant `a chaque fois ce mot `a la variable <nom>.
+```
+**Exemple** :
+```bash
+for aa in toto titi tata hop 32; do
+  echo "bonjour $aa";
+```
