@@ -323,3 +323,24 @@ Si <commande> renvoie un code de retour égal à 0 alors <liste de commande1> es
 ```bash
 if grep -q voiture fich; then echo "c’est vrai"; else echo "c’est faux"; fi
 ```
+
+
+### 9.3 Boucle while
+
+La syntaxe des boucles *tant que* est :<br>
+```bash
+while <commande>
+do
+  <liste de commandes>
+done
+```
+**ATTENTION** : Si on met sur la même ligne les mots-clés ```while```, ```do``` et/ou ```done``` il faut mettre un point- virgule ```;``` séparateur.
+```bash
+while <commande> ; do <liste de commandes>; done
+```
+Tant que la valeur de retour de la commande <commande> vaut 0, <liste de commandes> est exécutée. <commande> peut être un test (*c.f. section 9.5*).
+Exemple :
+```bash
+a=0;
+while (( a < 10 )); do a=$(( a + 1 )); echo $a; done;
+```
