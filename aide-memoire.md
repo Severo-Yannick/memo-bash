@@ -372,3 +372,17 @@ for aa in toto titi tata hop 32; do
 
 ### 9.5 Tests dans les conditionnelles ou les boucles
 Certaines commandes spéciales du shell permettent de faire des tests.
+
+### 9.5.1 Tests arithmétiques (( ))
+
+Les tests arithmétiques doivent être écrits entre des paires de doubles parenthèses (( ```<test>``` )) (voir le **man** de bash section : CALCUL ARITHMETIQUE).<br>
+Les tests possibles sont : ```== , != , <, >, <=, >=```.<br>
+Les tests peuvent être combinés avec **&&** (et), **!** (négation) et **||** (ou) et utiliser des parenthèses.<br>
+**ATTENTION : espaces obligatoires après ((, avant )) et entre les opérateurs.**
+
+Exemples :
+```bash
+(( 20 > 100 ))
+(( $b > 3 ))
+(( (3*$b == 57 || $a > 3) && ! ($a > 23) ))
+```
