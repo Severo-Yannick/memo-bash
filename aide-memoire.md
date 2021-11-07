@@ -369,3 +369,6 @@ une fois pour chaque mot de la <liste> en affectant `a chaque fois ce mot `a la 
 for aa in toto titi tata hop 32; do
   echo "bonjour $aa";
 ```
+
+### 9.5 Tests dans les conditionnelles ou les boucles
+Certaines commandes spéciales du shell permettent de faire des tests.
