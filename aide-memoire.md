@@ -386,3 +386,24 @@ Exemples :
 (( $b > 3 ))
 (( (3*$b == 57 || $a > 3) && ! ($a > 23) ))
 ```
+
+### 9.5.2 Tests sur des chaînes de caractères et des fichiers [[ ]]
+
+Les tests sur les chaînes de caractères et les fichiers doivent être écrits entre des paires de doubles crochets 
+```[[ <test> ]]``` (voir le **man** de bash section : EXPRESSIONS CONDITIONNELLES).
+
+Les tests possibles sont :
+```bash
+• [[ -e <nom> ]] vrai si <nom> existe (fichier, répertoire ou lien)
+• [[ -f <nom fich> ]] vrai si <nom fich> existe et est un fichier ou un lien sur un fichier
+• [[ -d <nom rep> ]] vrai si <nom rep> existe et est un r ́epertoire ou un lien sur un r ́epertoire
+• [[ -h <nom lien> ]] vrai si le lien symbolique de nom <nom lien> existe
+• [[ -r <nom> ]] vrai si nom existe et est accessible en lecture
+• [[ -z $c ]] vrai si la variable c est vide
+• [[ -n $c ]] vrai si la variable c est non vide
+• [[ $c == "toto" ]] test d’ ́egalité
+• [[ $a > "toto" ]] vrai si $a est apr`es toto dans l’ordre alphab ́etique.
+En particulier [[ 20 > 100 ]] est vrai !
+```
+Les tests peuvent être combinés avec **&&** , **||** , **!** et utiliser les parenthèses.<br>
+***ATTENTION : espaces obligatoires après [[, avant ]] et entre les opérateurs.***
