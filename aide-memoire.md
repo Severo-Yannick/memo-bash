@@ -407,3 +407,30 @@ En particulier [[ 20 > 100 ]] est vrai !
 ```
 Les tests peuvent être combinés avec **&&** , **||** , **!** et utiliser les parenthèses.<br>
 ***ATTENTION : espaces obligatoires après [[, avant ]] et entre les opérateurs.***
+
+### 9.6 Fonctions
+
+Il est possible de définir des fonctions en bash. Une fois définie, elle s’utilise comme une commande normale.<br>
+La syntaxe est :
+```bash
+function <nom fonction> () {
+<liste de commandes>
+}
+````
+
+La liste d’arguments est toujours vide !
+
+L’utilisation de ```return <n>``` à l’intérieur d’une fonction permet d’en sortir. L’entier ```<n>``` est la valeur de retour de la fonction.
+
+Une fonction peut prendre des paramètres en les référencant dans le corps de la fonction de la même façon que dans un script, avec les notations $1, $2, $3, . . .
+
+```bash
+userName="Morgan";
+
+function say() {
+  echo "Hello $userName"
+}
+say
+
+#Hello Morgan
+```
